@@ -1,0 +1,30 @@
+﻿body {
+}
+
+h1 {
+    padding-left: 40px;
+}
+
+h2 {
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+
+    padding-left: 40px;
+}
+
+div {
+    padding-top: 10px;
+    padding-left: 40px;
+    width: 500px;
+}
+
+a {
+    font-size: 20px;
+
+    padding-bottom: 10px;
+}
