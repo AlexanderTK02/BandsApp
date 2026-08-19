@@ -10,14 +10,17 @@
 		href="~/css/style.css" />
 </head>
 <body>
-	<h2 >Favourit-band</h2>
-	<h1 >Band</h1>
+	<div class="home">
+		<h2 class="text">Favorit-band</h2>
+		<img class="main" src="/images/Band-Home2.png" />
 
-	<ul>
-		@foreach (var item in Model)
-			{
-				<ul><a href="https://localhost:7057/bands/@item.Id">@item.Name</a></ul>
-			}
-		</ul>
+		<ul class="flex fix">
+			@foreach (var item in Model)
+				{
+					<a href="https://localhost:7057/bands/@item.Id">@item.Name</a>
+				}
+			</ul>
+	</div>
+
 </body>
 </html>

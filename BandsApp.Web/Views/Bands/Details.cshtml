@@ -10,10 +10,14 @@
 		href="~/css/style.css" />
 </head>
 <body>
-	<h1 >@Model.Name</h1>
-	<img src="@($"/images/image{Model.Id}.png")"/>
-	<div>
-		<p>Description: @Model.Description</p>
+	<div class="home">
+		<h1 class="text">@Model.Name</h1>
+		<img src="@($"/images/image{Model.Id}.png")"/>
+		<div>
+			<p class="text">Description: @Model.Description</p>
+		</div>
+		@* Hela elementet under är taget från youtubes embed funktion. *@
+		<iframe width="560" height="315" src="@Model.YoutubeUrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 	</div>
 </body>
 </html>
